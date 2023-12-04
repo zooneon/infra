@@ -1,0 +1,14 @@
+# ubuntu 20.04
+
+network:
+  version: 2
+  ethernets:
+    ens3:
+      dhcp4: false
+      mtu: ${mtu_size}
+      addresses:
+        - ${address}/24
+      gateway4: ${gateway}
+      nameservers:
+        addresses:
+          - ${nameserver}
