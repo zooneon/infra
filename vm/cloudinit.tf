@@ -13,7 +13,7 @@ data "template_file" "user_data" {
   vars = {
     user           = var.user
     ssh_public_key = var.ssh_public_key
-    hostname       = "node${count.index + 1}" 
+    hostname       = "node${count.index + 1}.lab"
   }
 }
 
