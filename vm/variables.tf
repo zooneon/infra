@@ -9,7 +9,7 @@ variable "host" {
 }
 
 variable "keyfile_path" {
-  default = "/Users/zooneon/.ssh/zooneon.pem"
+  default = "/Users/zooneon/.ssh/terraform.pem"
 }
 
 # variables for domain
@@ -59,7 +59,7 @@ variable "volume_type" {
 }
 
 variable "volume_image_source" {
-  default = "https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64-disk-kvm.img"
+  default = "https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64-disk-kvm.img"
 }
 
 variable "volume_pool_name" {
