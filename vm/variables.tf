@@ -9,7 +9,7 @@ variable "host" {
 }
 
 variable "keyfile_path" {
-  default = "/Users/zooneon/.ssh/terraform.pem"
+  default = "/Users/zooneon/.ssh/zooneonbot.pem"
 }
 
 # variables for domain
