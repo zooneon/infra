@@ -15,7 +15,12 @@ resource "libvirt_domain" "node" {
   }
 
   disk {
-    volume_id = libvirt_volume.node_volume[count.index].id
+    volume_id = libvirt_volume.node[count.index].id
+    scsi 	    = true
+  }
+
+  disk {
+    volume_id = libvirt_volume.storage[count.index].id
     scsi 	    = true
   }
 

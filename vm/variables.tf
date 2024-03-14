@@ -62,13 +62,12 @@ variable "volume_image_source" {
   default = "https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64-disk-kvm.img"
 }
 
-variable "volume_pool_name" {
-  # default = "default"
-  default = "node"
+variable "storage_size" {
+  default = "64424509440"  # 60GB
 }
 
 # variables for cloudinit
 
 variable "ssh_public_key" {
-  default = "ssh-rsa AAAAB3N"
+  default = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDYc5kk0A8IcyyOgQDJv/0bpYmBJa2xCwh5kyguBuHjg/o47oUyW6hNtR/z7xOO4n2YhyvAF3qZil1DA3vB/Q6BPE1g169Y2hhNqLE9fk679NrXWw45JVxu+rIDHCGLKpJAvUEf6YfThxEhEVJb2A4g+BPK9zM8kVZHFGIuf2o8bcAlEryi6dgSXvvvPc1azV4Df7MYYhV+VwaU9W9YYDPyKNGKbPc/8vi6tOTsX8VTHeE164sSVXVpjErv1MKFUlgw6Zn49tPSwAvcu7rZjmEqpvLzV7bl49PjI4vqpX9/GwPVJSkDnSBu2KZXFpLEQ4IGyHTb1DqKvqAT12+sHyzj034m73x99kokuLfJToENkrgmGuRlsGUQVRLYo7wuZqVi2fx6uE7ZexWM3BMUik5BTfpylsH3AD7ONS0pu5lxhrIhFUTxhOmSVp+6AtS5zBHk9tXYostFeSZm/XIOXajIS1sGhFW5iakL8c6ePFZ0MShUeeMZ+yiearYg/Tfd7e0= zooneon@gwonjun-won-ui-MacBookPro.local"
 }
