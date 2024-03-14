@@ -20,7 +20,6 @@ users:
 runcmd:
   - sed -i 's/SELINUX=enforcing/SELINUX=disabled/g' /etc/selinux/config
   - hostnamectl set-hostname ${hostname}
-  # mount volume to /mnt/data
   - mkfs.ext4 /dev/sdb
   - mkdir -p /mnt/data
   - mount /dev/sdb /mnt/data
